@@ -18,8 +18,8 @@
         compatible = "zmk,behavior-hold-tap";
         label = "MY_LAYER_TAP";
         #binding-cells = <2>;
-        flavor = "tap-preferred";
-        tapping-term-ms = <125>;
+        flavor = "hold-preferred";
+        tapping-term-ms = <200>;
         bindings = <&mo>, <&kp>;
       };
     };
