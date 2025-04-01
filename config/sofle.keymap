@@ -17,6 +17,10 @@
   quick-release;
 };
 
+&mt {
+  flavor = "tap-preferred";
+};
+
 / {
     behaviours {
       mlt: my-layer-tap {
