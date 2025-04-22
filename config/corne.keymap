@@ -72,7 +72,7 @@
 // |   |   |     |     |   +  |   _  |  {   |                   |  }   |       |   <   |   >  |   ?   |       |
 //                            |      |      |        |  |       |      |       |
             bindings = <
-&trans       &kp N1  &kp N2  &kp N3         &kp N4          &kp N5                      &kp N6    &kp N7    &kp N8     &kp N9    &kp N0    &kp NUHS
+&kp GRAVE    &kp N1  &kp N2  &kp N3         &kp N4          &kp N5                      &kp N6    &kp N7    &kp N8     &kp N9    &kp N0    &kp NUHS
 &trans       &trans  &trans  &mt LGUI EQUAL &mt LSHFT MINUS &kp LBKT                    &kp RBKT  &trans    &trans     &trans    &kp COLON &kp LS(SQT)
 &kp LS(NUBS) &trans  &trans  &kp PLUS       &kp UNDER       &kp LBRC                    &kp RBRC  &trans    &kp LT     &kp GT    &kp QMARK &trans
                                                  &trans       &trans    &trans   &trans   &trans    &trans                     
