@@ -40,6 +40,14 @@
             require-prior-idle-ms = <100>;
             bindings = <&kp>, <&kp>;
         };
+        mttp: mod_tap_tap_preferred {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            require-prior-idle-ms = <100>;
+            bindings = <&kp>, <&kp>;
+        };
         lhrm: left_homerow_mods {
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS_LEFT";
@@ -77,10 +85,10 @@
             //                              | GUI  | LOWER |  SPACE |  | SHIFT | RAISE | ALT   |
 
             bindings = <
-&kp TAB          &kp Q  &kp W         &kp E         &kp R          &kp T        &kp Y      &kp U          &kp I         &kp O         &kp P     &kp BSPC
-&mthp LCTRL ESC  &kp A  &lhrm LALT S  &lhrm LGUI D  &lhrm LSHFT F  &kp G        &kp H      &rhrm RSHFT J  &rhrm RGUI K  &rhrm RALT L  &kp SEMI  &mt RCTRL SQT
-&kp NUBS         &kp Z  &kp X         &kp C         &kp V          &kp B        &kp N      &kp M          &kp COMMA     &kp DOT       &kp FSLH  &kp ENTER
-                                      &none         &mo 1          &kp SPACE    &kp LSHFT  &mo 2          &none
+&kp TAB          &kp Q  &kp W         &kp E         &kp R          &kp T               &kp Y      &kp U          &kp I         &kp O         &kp P     &kp BSPC
+&mthp LCTRL ESC  &kp A  &lhrm LALT S  &lhrm LGUI D  &lhrm LSHFT F  &kp G               &kp H      &rhrm RSHFT J  &rhrm RGUI K  &rhrm RALT L  &kp SEMI  &mt RCTRL SQT
+&kp NUBS         &kp Z  &kp X         &kp C         &kp V          &kp B               &kp N      &kp M          &kp COMMA     &kp DOT       &kp FSLH  &kp ENTER
+                                      &none         &mo 1          &mttp LGUI SPACE    &kp LSHFT  &mo 2          &none
             >;
         };
 
